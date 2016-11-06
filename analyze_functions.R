@@ -1,3 +1,5 @@
+# These functions are useful for generating the status for muliple datasets
+
 analyze_data <- function(file, countr) {
   file_out <- read.csv(file, header = TRUE)
   country_name <- subset(file_out, file_out$country == countr)
